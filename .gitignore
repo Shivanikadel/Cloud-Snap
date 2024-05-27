@@ -1,0 +1,34 @@
+.vscode
+src/terraform/.terraform/providers/
+src/terraform/terraform.tfstate
+src/terraform/terraform.tfstate.backup
+src/terraform/.terraform.tfstate.lock.info
+src/terraform/variables.tfvars
+src/build
+
+# Frontend ignores
+# dependencies
+frontend/node_modules
+frontend/.pnp
+frontend/pnp.js
+
+# testing
+frontend/coverage
+src/test/test_data/
+
+# production
+frontend/build
+
+# misc
+frontend/.DS_Store
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/dist/
+dependencies/
+.vscode/

@@ -1,0 +1,148 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-053b0d53c279acc90",
+                    "InstanceId": "i-03f1c64d673ad4b70",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "bastion_key_pair",
+                    "LaunchTime": "2023-06-02T06:36:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1d",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-1-67.ec2.internal",
+                    "PrivateIpAddress": "10.0.1.67",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated (2023-06-02 06:42:48 GMT)",
+                    "SubnetId": "subnet-0501a7d75599654c5",
+                    "VpcId": "vpc-076914464791a9352",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-06-01T11:12:41+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-03084318bb62bcec0"
+                            }
+                        }
+                    ],
+                    "ClientToken": "terraform-20230601111129922600000003",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2023-06-01T11:12:41+00:00",
+                                "AttachmentId": "eni-attach-02ff1c6ae87b00afd",
+                                "DeleteOnTermination": false,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "bastion_security_group",
+                                    "GroupId": "sg-07831aaa62e03c071"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:f4:53:b2:3f:d7",
+                            "NetworkInterfaceId": "eni-07a32dc4a94158ed0",
+                            "OwnerId": "300044127473",
+                            "PrivateDnsName": "ip-10-0-1-67.ec2.internal",
+                            "PrivateIpAddress": "10.0.1.67",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-1-67.ec2.internal",
+                                    "PrivateIpAddress": "10.0.1.67"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0501a7d75599654c5",
+                            "VpcId": "vpc-076914464791a9352",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "bastion_security_group",
+                            "GroupId": "sg-07831aaa62e03c071"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.UserInitiatedShutdown",
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "project",
+                            "Value": "cloud-snap"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "cloud-snap-bastion-host"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-06-01T11:12:41+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios"
+                }
+            ],
+            "OwnerId": "300044127473",
+            "ReservationId": "r-01b5d11c282ae12c6"
+        }
+    ]
+}
